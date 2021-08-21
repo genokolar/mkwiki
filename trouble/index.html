@@ -1,0 +1,1168 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Glab LotKB Wiki文档站点.">
+      
+      
+      
+        <meta name="author" content="Geno">
+      
+      
+        <link rel="canonical" href="https://docs.glab.online/trouble/">
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+    
+    
+      
+        <title>故障排除 - GT WiKi</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GT WiKi" class="md-header__button md-logo" aria-label="GT WiKi" data-md-component="logo">
+      
+  <img src="../img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GT WiKi
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              故障排除
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/genokolar/nrf52-keyboard/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Genokolar/nrf52-keyboard
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GT WiKi" class="md-nav__button md-logo" aria-label="GT WiKi" data-md-component="logo">
+      
+  <img src="../img/favicon.png" alt="logo">
+
+    </a>
+    GT WiKi
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/genokolar/nrf52-keyboard/" title="前往 GitHub 仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Genokolar/nrf52-keyboard
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        主页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        更新日志
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../down/download/" class="md-nav__link">
+        相关下载
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        用户手册
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="用户手册" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          用户手册
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/" class="md-nav__link">
+        使用说明
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        常见问答
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          故障排除
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        故障排除
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    通用故障排除指南
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    我的USB或蓝牙无法正常输出按键
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    升级固件后键盘无法正常工作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    我的键盘无法开机了
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    按键混乱，或按键无响应
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    按键串键，自动输出按键
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    更新配列后所有按键失效
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows 下出现“驱动程序错误”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    无法搜索到蓝牙键盘
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    电脑上蓝牙设备在已配对-已连接间不停转换
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    蓝牙状态有时候出现卡键的问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    蓝牙状态有时候出现按键无效的问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    指示灯忽然亮起蓝牙广播指示灯
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    配置工具无法识别键盘
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configurator/" class="md-nav__link">
+        配置按键
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade/" class="md-nav__link">
+        固件更新
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        开发指南
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="开发指南" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          开发指南
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build/" class="md-nav__link">
+        编译指南
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../porting/" class="md-nav__link">
+        移植指南
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        产品页面
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="产品页面" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          产品页面
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard/gt_ble60_f/" class="md-nav__link">
+        BLE60 rev.F
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard/farad69_c/" class="md-nav__link">
+        Farad69 rev.C
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard/omega45_d/" class="md-nav__link">
+        Omega45 rev.D
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard/omega45_e/" class="md-nav__link">
+        Omega45 rev.E
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard/omega50_b/" class="md-nav__link">
+        Omega50 rev.B
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard/gt-pad/" class="md-nav__link">
+        GT PAD
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyboard/gt-planck/" class="md-nav__link">
+        GT Planck
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        键盘知识
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="键盘知识" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          键盘知识
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge/customkeyboard/" class="md-nav__link">
+        键盘组件
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge/keycapheight/" class="md-nav__link">
+        键帽高度
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge/axisswitch/" class="md-nav__link">
+        轴体类型
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://glab.online/archives/502" class="md-nav__link">
+        组装键盘
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    通用故障排除指南
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    我的USB或蓝牙无法正常输出按键
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    升级固件后键盘无法正常工作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    我的键盘无法开机了
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    按键混乱，或按键无响应
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    按键串键，自动输出按键
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    更新配列后所有按键失效
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows 下出现“驱动程序错误”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    无法搜索到蓝牙键盘
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    电脑上蓝牙设备在已配对-已连接间不停转换
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    蓝牙状态有时候出现卡键的问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    蓝牙状态有时候出现按键无效的问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    指示灯忽然亮起蓝牙广播指示灯
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    配置工具无法识别键盘
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">故障排除<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">通用故障排除指南<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>如果你的键盘遇到了无法正常工作的问题，请按下列步骤依次进行排查：</p>
+<ol>
+<li>通过观察指示灯判断键盘工作情况：<ul>
+<li>如果插入USB线后，亮USB工作指示灯，说明键盘基本没有问题</li>
+<li>如果指示灯无任何指示，考虑是否固件刷写失败或键盘已经损坏</li>
+</ul>
+</li>
+<li>可按照以下步骤检查键盘硬件是否损坏：<ul>
+<li>将键盘使用USB连接到电脑，观察电脑的设备状态和键盘的工作状态指示灯。</li>
+<li>若电脑设备列表能显示USB键盘，并且USB状态灯亮起的话，则说明蓝牙主控和USB芯片两个硬件均没有损坏。</li>
+<li>若电脑未发现USB键盘，而能搜索到蓝牙键盘，则说明至少蓝牙主控没有损坏，USB芯片可能存在问题。</li>
+<li>若电脑能发现USB键盘，而USB状态灯未亮起，同时无法搜索到蓝牙键盘的话，则说明USB芯片应该没有损坏，蓝牙主控可能有问题。</li>
+<li>上述所说的损坏/问题，也可能仅是软件问题，而不是硬件损坏。</li>
+</ul>
+</li>
+<li>如果遇到了蓝牙方面的问题，可以尝试 :关闭键盘后重新启动键盘、重新绑定蓝牙或重启电脑。</li>
+<li>如果还无法解决问题，可以尝试: <a href="../faq/#如何重置键盘">重置键盘</a>。</li>
+<li>支持线刷的新键盘可以勾选烧录工具中"烧录时擦除蓝牙固件"选项，并更新<code>完整蓝牙固件</code>进行修复。</li>
+<li>如还无法解决故障，可参考下面的具体情形进行处理，或请<a href="..#联系我们">联系我们</a>。</li>
+</ol>
+<h2 id="usb">我的USB或蓝牙无法正常输出按键<a class="headerlink" href="#usb" title="Permanent link">&para;</a></h2>
+<p>请按照以下步骤解决：</p>
+<ol>
+<li>
+<p>如果是USB无法输出按键，请先确认使用的是数据线而不是充电线。</p>
+<ul>
+<li>分清数据线与充电线：数据线与充电线是不同的，充电线仅仅能充电，数据线才能传输数据正常工作。</li>
+<li>原装手机线一般是数据线，淘宝购买的线请与卖家确定支持数据传输。</li>
+</ul>
+</li>
+<li>
+<p>如果蓝牙无法正常输出，首先请确认正确进行了<a href="../manual/#绑定设备">绑定设备</a>，如绑定后也无法正常输出，请参考：<a href="../faq/#如何改善蓝牙连接稳定性">如何改善蓝牙连接稳定性</a></p>
+</li>
+<li>
+<p>如果是升级新固件后导致的</p>
+<ul>
+<li>升级USB固件后，将电脑上的USB设备删除，并重新插入USB线进行识别及驱动安装。</li>
+<li>升级蓝牙固件后，将电脑上的蓝牙设备删除，并将键盘上的绑定清空，然后重新进行绑定。 </li>
+<li>如果是老硬件（2020年6月以前）升级后USB无法输出，可能是未同步升级USB固件，请<a href="..#联系我们">联系我们</a>获取USB固件。</li>
+<li>蓝牙固件有机率刷写失败，可以尝试重新刷写固件。</li>
+</ul>
+</li>
+<li>
+<p>如果上述步骤还无法解决问题，可以尝试: <a href="../faq/#如何重置键盘">重置键盘</a> 或 尝试更新<code>完整蓝牙固件</code>进行修复</p>
+</li>
+</ol>
+<h2 id="_3">升级固件后键盘无法正常工作<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>如刷写固件后指示灯未正常运作、无法输出按键 或 输出按键与实际按键不符，可考虑固件刷写出错</p>
+<ol>
+<li>
+<p>可能是下载的固件不对应，比如下载了其他键盘的固件，或者固件的版本不对应。</p>
+<ul>
+<li>如键盘是Omega50，却升级了Omega45的键盘固件</li>
+<li>如键盘是Farad rev.B版，却升级了Farad rev.A的键盘固件</li>
+<li>请更新正确的固件即可解决问题。</li>
+</ul>
+</li>
+<li>
+<p>确定固件是正确的对应的固件</p>
+<ul>
+<li>蓝牙固件有机率刷写失败，可以尝试重新刷写固件。如果指示灯能正常运作，方可确认蓝牙固件刷写正确。</li>
+<li>升级USB固件后，将电脑上的USB设备删除，并重新插入USB线进行识别及驱动安装。</li>
+<li>升级蓝牙固件后，将电脑上的蓝牙设备删除，并将键盘上的绑定清空，然后重新进行绑定。</li>
+<li>如还无法解决问题，可考虑勾选烧录工具中"烧录时擦除蓝牙固件"选项，并更新<code>完整蓝牙固件</code>进行修复</li>
+</ul>
+</li>
+</ol>
+<h2 id="_4">我的键盘无法开机了<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>观察指示灯，如键盘无指示灯工作，可能是键盘未能正常开机</p>
+<ol>
+<li>
+<p>确保键盘有正常供电，如插入USB线进行供电、电池充电后使用、确保电池接口正负极正确。</p>
+</li>
+<li>
+<p>如有电状态无法正常开机，老硬件可以尝试 :<a href="../faq/#如何进入DFU模式">强制进入DFU</a>，然后更新最新的固件。</p>
+</li>
+<li>
+<p>如有电状态无法正常开机，支持线刷的新键盘可以尝试重新更新固件，甚至更新完整蓝牙固件进行修复。</p>
+</li>
+<li>
+<p>如蓝牙升级失败导致的，仅需要确保蓝牙固件正确，然后重新更新固件即可。</p>
+</li>
+</ol>
+<h2 id="_5">按键混乱，或按键无响应<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>注:所谓按键混乱，是指按A出Z，按B出Q这种无规律的输出错误。</p>
+<p>按键错乱或按键无响应一般是软故障，请按照以下步骤检查：</p>
+<ol>
+<li>
+<p>如果是升级固件后导致的，可能是下载的固件不对应，比如下载了其他键盘的固件，或者固件的版本不对应。</p>
+<ul>
+<li>如键盘是Omega50，却升级了Omega45的键盘固件</li>
+<li>如键盘是Farad rev.B版，却升级了Farad rev.A的键盘固件</li>
+</ul>
+<p>上述故障请更新正确的固件。</p>
+</li>
+<li>
+<p>如果没有升级固件，可能是选择了不正确的默认层。可以尝试<code>恢复默认层</code>的设置：先 :<code>休眠键盘</code>，再<code>唤醒键盘</code>，即可恢复默认层。</p>
+</li>
+<li>
+<p>如果<code>恢复默认层</code>无效，或者按键无响应。可以尝试<a href="../faq/#如何重置键盘">重置键盘</a></p>
+</li>
+<li>
+<p>上述无法解决的话，支持线刷的新键盘可以尝试勾选烧录工具中"烧录时擦除蓝牙固件"选项，并更新<code>完整蓝牙固件</code>进行修复。</p>
+</li>
+</ol>
+<h2 id="_6">按键串键，自动输出按键<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>注:所谓按键串键，是指按A出QAZ多个按键，按E出EDC多个按键这种一个键触发多个按键的情况。</p>
+<p>按键串键一般是硬件故障，请按照以下步骤检查：</p>
+<ol>
+<li>
+<p>如果您使用的金属壳，请做好金属壳与PCB上元件裸漏部分的绝缘。</p>
+<ul>
+<li>最简单的判断是否金属壳导致的串键方式：将PCB从金属外壳中取出，看是否还有串键情况。</li>
+<li>如GH60的金属外壳，GH两个按键之间的螺丝柱就极易导致金属短接。</li>
+<li>金属壳，主要检查螺丝柱、支撑点这些突起部分与PCB裸漏部分是否会短接。</li>
+</ul>
+</li>
+<li>
+<p>如果没有使用金属壳，可以用肉眼观察一下蓝牙主控部分（PCB上带金属屏蔽壳的大模块）的针脚之间是否有短接；各个元件之间是否因为某些原因导致短接。</p>
+</li>
+<li>
+<p>如果上述方式无法确认问题的话，也可能是因为线路短接、静电击毁等原因导致蓝牙故障，请<a href="..#联系我们">联系我们</a>。</p>
+</li>
+</ol>
+<h2 id="_7">更新配列后所有按键失效<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>可以尝试<a href="../faq/#如何重置键盘">重置键盘</a></p>
+<h2 id="windows">Windows 下出现“驱动程序错误”<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
+<ol>
+<li>在Windows的设备管理器中删除这个设备，或取消这个设备的绑定</li>
+<li>重启你的电脑</li>
+<li><code>清空键盘绑定信息</code></li>
+<li>在电脑上尝试重新连接</li>
+</ol>
+<h2 id="_8">无法搜索到蓝牙键盘<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ol>
+<li>确保键盘正常通电，是否通电可以通过观察是否有指示灯正常闪烁或曾经闪烁进行确认。</li>
+<li>如果您已经绑定了一个设备，第二个设备搜索不到蓝牙键盘。<ul>
+<li>先阅读学习<a href="../manual/#绑定设备">绑定设备</a> 的相关操作。</li>
+<li>已经绑定一个设备后，如果第二个设备要搜索到蓝牙键盘，必须切换到未绑定的蓝牙通道并广播。</li>
+<li>如果要在当前蓝牙通道进行搜索绑定，您需要先清空当前通道绑定的设备后，然后再进行搜索。</li>
+</ul>
+</li>
+<li>如果是键盘开机或唤醒后放置了一段时间后无法搜索到蓝牙键盘，您只需要同时按下<kbd>Lshift</kbd>+<kbd>Rshift</kbd>+<kbd>R</kbd>重新开启蓝牙广播，即可搜索到蓝牙键盘。</li>
+</ol>
+<h2 id="-">电脑上蓝牙设备在已配对-已连接间不停转换<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+<p>可能是绑定信息因为误操作，重置键盘等被删除，只需要删除电脑等设备上的绑定信息后，重新<a href="../manual/#绑定设备">绑定设备</a>即可解决。 </p>
+<h2 id="_9">蓝牙状态有时候出现卡键的问题<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>所谓卡键，就是某一个按键一直处于按下状态（不停输出），但实际并未按下。</p>
+<p>这是蓝牙信号不好，导致信号中断后，电脑认为按键一直处于按下状态的原因。</p>
+<p>请参考问答解决：<a href="../faq/#如何改善蓝牙连接稳定性">如何改善蓝牙连接稳定性</a></p>
+<h2 id="_10">蓝牙状态有时候出现按键无效的问题<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>可能是蓝牙信号不好，导致蓝牙断开连接，无法正常输出按键。</p>
+<p>请参考问答解决：<a href="../faq/#如何改善蓝牙连接稳定性">如何改善蓝牙连接稳定性</a></p>
+<h2 id="_11">指示灯忽然亮起蓝牙广播指示灯<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>这是蓝牙信号不好，蓝牙断开连接后马上又恢复连接的表现。</p>
+<p>请参考问答解决：<a href="../faq/#如何改善蓝牙连接稳定性">如何改善蓝牙连接稳定性</a></p>
+<h2 id="_12">配置工具无法识别键盘<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>配置工具无法识别，请按下列步骤解决：</p>
+<ol>
+<li>
+<p>必须开启客户端：<a href="../down/download/#配置工具">lkb-configurator-server</a></p>
+</li>
+<li>
+<p>不要使用USB集线器，直接将键盘线插入电脑USB口</p>
+</li>
+<li>
+<p>开启配置工具的同时，在浏览器中访问http://localhost:5000/api/device</p>
+<ul>
+<li>(1).如果显示：无法访问此页面，说明配置工具没有正常启用</li>
+<li>(2).如果显示：[]，说明配置工具正常，但是键盘未被识别</li>
+<li>(3).如果显示：[{"id":"4992B144","vid":17254,....]，说明键盘正确识别</li>
+</ul>
+</li>
+<li>
+<p>安装版配置工具显示空白页面 或 其他访问异常</p>
+<ul>
+<li>请首先确保电脑正常联网，并关闭代理、防火墙等，使配置工具可正常访问网络</li>
+<li>如无法确认情况，但属于第5条第(3)种情况，可在开启配置工具的同时，浏览器访问keyboard.lotlab.org。</li>
+</ul>
+</li>
+<li>
+<p>如PCB较为老旧（2020年6月之前购买），您需要先升级固件</p>
+<ul>
+<li>升级蓝牙固件：访问 <a href="../down/download/">相关下载</a> 下载新版固件，然后 <a href="../upgrade/#更新蓝牙固件">更新蓝牙固件</a></li>
+<li>如果升级蓝牙固件后可以识别，不需要升级USB固件，如果还是无法识别，请<a href="../upgrade/#更新USB固件">升级USB固件</a>，并删除电脑上USB键盘，重新插入键盘识别</li>
+</ul>
+</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../faq/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 常见问答" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              常见问答
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../configurator/" class="md-footer__link md-footer__link--next" aria-label="下一页: 配置按键" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              配置按键
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <a href=http://glab.online/>键圈欢乐多</a> - <a href=http://www.beian.miit.gov.cn/>蜀ICP备19008711号</a> © 2021 Glab.online
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.tabs.link", "navigation.sections", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.febc23d1.min.js"></script>
+      
+    
+  </body>
+</html>
